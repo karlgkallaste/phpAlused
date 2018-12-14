@@ -35,3 +35,39 @@ if($arv >= 0 and  $arv < 25) {
 }else if ($arv >= 75 and $arv < 100) {
     echo '<div style="color:orange">' . $arv . '</div>';
 }
+//switch (kontroll)
+//case:vastus;
+//tegevused mis antud casei puhul toimivad
+//break;
+//default;
+//k6ik tegevused mis toimuvad kui muu ei sobi.
+//break;
+?>
+
+<style>
+    div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: solid 2px black;
+}
+
+</style>
+
+<?php
+echo'<hr>';
+echo '<h5>Ülesanne 3</h5>';
+$aktiivne = 'roheline';
+switch ($aktiivne) {
+    case 'punane';
+        echo '<div style="background=red"></div>';
+        echo '<div></div>';
+        echo '<div></div>';
+}
+switch ($aktiivne) {
+    case 'roheline';
+        echo '<div style="background=green"></div>';
+        echo '<div></div>';
+        echo '<div></div>';
+
+
