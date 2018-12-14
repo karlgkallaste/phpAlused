@@ -17,23 +17,23 @@
 echo '<h5>Ülesanne</h5>';
 $arv = 68;
 IF($arv %  2 == 0){
-    echo '<div style="color: green">'.$arv.'</div>';
+    echo '<div class="cl" style="color: green">'.$arv.'</div>';
  }
  else{
-    echo '<div style="color: red">'.$arv.'</div>';
+    echo '<div class="cl"  style="color: red">'.$arv.'</div>';
 
 }
 echo'<hr>';
 echo '<h5>Ülesanne 2</h5>';
 $arv = rand(0,100);
 if($arv >= 0 and  $arv < 25) {
-    echo '<div style="color:red">' . $arv . '</div>';
+    echo '<div class="cl"  style="color:red">' . $arv . '</div>';
 } else if ($arv >= 25 and $arv < 50) {
-    echo '<div style="color:green">' . $arv . '</div>';
+    echo '<div class="cl"  style="color:green">' . $arv . '</div>';
 }else if ($arv >= 50 and $arv < 75) {
-    echo '<div style="color:blue">' . $arv . '</div>';
+    echo '<div class="cl"  style="color:blue">' . $arv . '</div>';
 }else if ($arv >= 75 and $arv < 100) {
-    echo '<div style="color:orange">' . $arv . '</div>';
+    echo '<div class="cl"  style="color:orange">' . $arv . '</div>';
 }
 //switch (kontroll)
 //case:vastus;
@@ -51,6 +51,9 @@ if($arv >= 0 and  $arv < 25) {
     border-radius: 50px;
     border: solid 2px black;
 }
+    .cl {
+        border: solid 0px white;
+    }
 
 </style>
 
@@ -60,14 +63,26 @@ echo '<h5>Ülesanne 3</h5>';
 $aktiivne = 'roheline';
 switch ($aktiivne) {
     case 'punane';
-        echo '<div style="background=red"></div>';
+        echo '<div style="background: red"></div>';
         echo '<div></div>';
         echo '<div></div>';
-}
-switch ($aktiivne) {
+        break;
+
+    case 'kollane';
+        echo '<div></div>';
+        echo '<div style="background: orange"></div>';
+        echo '<div></div>';
+        break;
     case 'roheline';
-        echo '<div style="background=green"></div>';
         echo '<div></div>';
         echo '<div></div>';
+        echo '<div style="background: green"></div>';
+        break;
+    default:
+        echo '<div style="background: balck"></div>';
+        echo '<div style="background: black"></div>';
+        echo '<div style="background: black"></div>';
+}
+
 
 
