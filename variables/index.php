@@ -23,9 +23,9 @@ echo 'true '. $toevaartusTrue.'<br>';
 echo 'false '. $toevaartusFalse.'<br>';
 echo '<hr>';
 //tyybikontroll
-echo gettype(sone);
+echo gettype($sone);
 
-echo $sone + $sone;
+echo $sone.$sone;
 echo '<br>';
 $summa = $sone + $sone;
 settype($summa, type.'string');
