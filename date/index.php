@@ -36,7 +36,6 @@ $userDob2 = '1999-05-31';
 //date time infost mis on yleval.
 $dob = new DateTime($userDob);
 $dob2 = new DateTime($userDob2);
-
 //v6rdlemine hetke kuup2eva ja synnip2evaga
 $now = new DateTime();
 $now2 = new DateTime();
@@ -58,4 +57,16 @@ echo "<br>";
 echo "Meie vanuse vahe: ".$vahe. "aastat";
 echo "<br>";
 //Juubel?
+echo "Ütleb kas on juubel või ei, oleneb koodist.";
+echo "<br>";
+$vanus = '19';
+$juubel = $vanus + '1';
+if ($juubel == 20){
+echo "Jah on juubel";
+}
+else if ($juubel == 21)
+{
+    echo 'Ei ole juubel';
+}
+
 
