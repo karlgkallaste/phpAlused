@@ -8,10 +8,10 @@
 echo "Ülesanne 8<br>";
 echo date('d.m.Y G:i' , time());
 echo "<br>Päev:";
-//kuude massiiv
+//päevade massiiv
 $p2ev = array(1=>'esmaspäev', 'teisipäev', 'kolmapäev', 'neljapäev', 'reede');
-//kuupäevad massiividesse
+//päev massiividesse
 $paev = $p2ev[date('n')];
-//kuupäeva väljastamine
+//päeva väljastamine
 echo $paev;
 
