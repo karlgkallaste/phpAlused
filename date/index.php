@@ -9,7 +9,7 @@ echo "Ülesanne 8<br>";
 echo date('d.m.Y G:i' , time());
 echo "<br>Päev:";
 //päevade massiiv
-$p2ev = array(1=>'esmaspäev', 'teisipäev', 'kolmapäev', 'neljapäev', 'reede');
+$p2ev = array(1=>'esmaspäev', 'teisipäev', 'kolmapäev', 'neljapäev', 'reede', 'laupäev', 'Pühapäev');
 //päev massiividesse
 $paev = $p2ev[date('n')];
 //päeva väljastamine
@@ -56,3 +56,6 @@ echo "<br>";
 echo "Minu vanus: ". $age2. "aastat";
 echo "<br>";
 echo "Meie vanuse vahe: ".$vahe. "aastat";
+echo "<br>";
+//Juubel?
+
