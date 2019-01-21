@@ -1,3 +1,7 @@
+<center>
+<h1>Ülesanne 8</h1>
+</center>
+<hr>
 <?php
 /**
  * Created by PhpStorm.
@@ -5,7 +9,7 @@
  * Date: 21.01.2019
  * Time: 12:09
  */
-echo "Ülesanne 8<br>";
+
 echo date('d.m.Y G:i' , time());
 echo "<br>Päev:";
 //päevade massiiv
@@ -25,7 +29,7 @@ $aasta = date('Y');
 echo $paev.'.'.$kuu.' '.$aasta;
 echo "<br>";
 //J2rgmine jaanip2ev
-$d1=strtotime("June 21");
+$d1=strtotime("June 24");
 $d2=ceil(($d1-time())/60/60/24);
 echo "Järgmise Jaanipäevani on " . $d2 ." päeva";
 echo "<br>";
@@ -69,4 +73,14 @@ else if ($juubel == 21)
     echo 'Ei ole juubel';
 }
 
+
+$aeg = new Date();
+$tund = now.getHours();
+if ($tund > 0) $s6num = "edu";
+if ($tund > 6) $s6num = "edu";
+if ($tund > 12) $s6num = "edu";
+if ($tund > 17) $s6num = "edu";
+if ($tund > 22) $s6num = "edu";
+
+echo $s6num;
 
