@@ -14,4 +14,18 @@ $p2ev = array(1=>'esmaspäev', 'teisipäev', 'kolmapäev', 'neljapäev', 'reede'
 $paev = $p2ev[date('n')];
 //päeva väljastamine
 echo $paev;
-
+echo "<br>";
+//kuude osa.
+$eesti_kuud = array(1=>'jaanuar', 'veebruar', 'märts', 'aprill', 'mai', 'juuni', 'juuli', 'august', 'september', 'oktoober', 'november', 'detsember');
+//kuupäevad massiividesse
+$paev = date('d');
+$kuu = $eesti_kuud[date('n')];
+$aasta = date('Y');
+//kuupäeva väljastamine
+echo $paev.'.'.$kuu.' '.$aasta;
+echo "<br>";
+//J2rgmine jaanip2ev
+$d1=strtotime("June 21");
+$d2=ceil(($d1-time())/60/60/24);
+echo "Järgmise Jaanipäevani on " . $d2 ." päeva";
+//sünnipeäva arvutamine.
