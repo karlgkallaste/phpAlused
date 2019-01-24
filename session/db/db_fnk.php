@@ -5,6 +5,9 @@
  * Date: 24.01.2019
  * Time: 13:01
  */
+session_start();
+require_once 'fnk.php'
+
 function connect_db($host,$dbUser,$dbPass, $dbName)
 {
     $conn = mysqli_connect($host, $dbUser, $dbPass, $dbName);
@@ -33,3 +36,4 @@ function getdata($sql,$conn){
     }
     return $data;
 }
+

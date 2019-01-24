@@ -6,9 +6,10 @@
  * Time: 14:17
  */
 function htmlFromFile($fileName){
-    $filename = 'html/'.$fileName.'.html';
-    $fp = fopen($filename,'r');
+    $fileName = 'html/'.$fileName.'.html';
+    $fp = fopen($fileName,'r');
     $content = fread($fp,filesize($fileName));
     fclose($fp);
     return $content;
+
 }
