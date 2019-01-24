@@ -20,5 +20,12 @@ $res = getdata($sql,$iktconn);
 
 echo '<pre>';
 print_r($res);
-echo 'Tere '.$res[0]['first_name'];
+echo 'Tere '.$res[0]['first_name'].' '.$res[0]['last_name'];
+echo '<br>';
+$sql = 'SELECT NOW()';
+$aeg = getData($sql, $iktconn);
+echo'<pre>';
+print_r($aeg);
+echo'</pre>';
+echo $aeg[0]['NOW()'].'<br>';
 
