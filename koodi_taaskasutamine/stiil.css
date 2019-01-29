@@ -1,3 +1,25 @@
 .peamenu{
     background-color: brown;
+    padding-top: 50px;
+}
+.peamenu a{
+    color:#fff;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin-right: 50px;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 60px;
+
+}
+.peamenu a:hover {
+    background-color: #fff;
+    color:#000;
+}
+.taust{
+    padding-right: 80px;
+    padding-left:80px;
+}
+.danger{
+    color:red;
+    font-size: 100px;
 }

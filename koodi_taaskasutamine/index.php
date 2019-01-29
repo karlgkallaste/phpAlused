@@ -1,3 +1,4 @@
+<body class="taust">
 <head>
     <link rel="stylesheet" href="stiil.css">
 </head>
@@ -6,8 +7,10 @@
     <a href="index.php?leht=portfoolio">Portfoolio</a>
     <a href="index.php?leht=kaart">Kaart</a>
     <a href="index.php?leht=kontakt">Kontakt</a>
-    <a href="index.php?leht=kont2akt">Kontakt</a>
+    <a href="index.php?leht=kont2akt">Muu</a>
 </menu>
+
+</body>
 <?php
 /**
  * Created by PhpStorm.
@@ -23,7 +26,9 @@ if(!empty($_GET['leht'])){
     if($kontroll==true){
         include($leht.'.php');
     } else {
-        echo 'Valitud lehte ei eksisteeri!';
+        echo '<h1 class="danger">ERROR 404<h1>';
+        echo '<h1 class="danger">Valitud lehte ei eksisteeri!<h1>';
+        echo "<iframe src=\"https://giphy.com/embed/5qFfeaFEIsaYueNKG8\" width=\"480\" height=\"269\"</iframe>";
     }
 } else {
     $leht = $_GET['leht'];
