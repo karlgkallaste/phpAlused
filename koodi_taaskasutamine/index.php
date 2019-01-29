@@ -1,8 +1,12 @@
-<menu>
+<head>
+    <link rel="stylesheet" href="stiil.css">
+</head>
+<menu class="Peamenu">
     <a href="index.php">Avaleht</a>
     <a href="index.php?leht=portfoolio">Portfoolio</a>
     <a href="index.php?leht=kaart">Kaart</a>
     <a href="index.php?leht=kontakt">Kontakt</a>
+    <a href="index.php?leht=kont2akt">Kontakt</a>
 </menu>
 <?php
 /**
